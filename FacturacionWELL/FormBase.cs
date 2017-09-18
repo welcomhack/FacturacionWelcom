@@ -33,7 +33,7 @@ namespace FacturacionWELL
 
 
         }
-        public virtual void Comsultar()
+        public virtual void Consultar()
         {
 
 
@@ -42,6 +42,11 @@ namespace FacturacionWELL
         {
             return false;
 
+        }
+
+        private void FormBase_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

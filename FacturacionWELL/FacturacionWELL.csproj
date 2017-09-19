@@ -120,6 +120,12 @@
     <EmbeddedResource Include="Mantenimiento.resx">
       <DependentUpon>Mantenimiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Cliente.resx">
+      <DependentUpon>Mantenimiento_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Producto.resx">
+      <DependentUpon>Mantenimiento_Producto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaAdmin.resx">
       <DependentUpon>VentanaAdmin.cs</DependentUpon>
     </EmbeddedResource>

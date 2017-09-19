@@ -22,10 +22,10 @@ namespace FacturacionWELL
         {
             try
             {
-                string cmd = string.Format("exec ActualizaArticulos '{0}','{1}','{2}'", txtIdpro.Text.Trim(), txtNompro.Text.Trim(), txtPrecio.Text.Trim());
+                string cmd = string.Format("exec Administracion.dbo.ActualizaArticulos '{0}','{1}','{2}'", txtIdpro.Text.Trim(), txtNompro.Text.Trim(), txtPrecio.Text.Trim());
 
                 Utilidades.Ejecutar(cmd);
-                MessageBox.Show("se ha guardado la infirmacion.");
+                MessageBox.Show("se ha guardado la informacion.");
                 return true;
 
             }
@@ -33,6 +33,21 @@ namespace FacturacionWELL
             {
                 MessageBox.Show("No se ha podido Guarda la informacion" + error.Message);
                 return false;
+            }
+        }
+        public override void Eliminar()
+        {
+
+            try
+            {
+                string cmd = string.Format("exec Administracion.dbo.EliminarArticulos '{0}'", txtIdpro.Text.Trim());
+                Utilidades.Ejecutar(cmd);
+                MessageBox.Show("Se eliminó el articulo.");
+
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show("No se ha  podido eliminar el articulo." + error.Message);
             }
         }
     }

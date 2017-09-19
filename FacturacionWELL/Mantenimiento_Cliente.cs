@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Milibreria;
 
 namespace FacturacionWELL
 {
@@ -15,6 +16,39 @@ namespace FacturacionWELL
         public Mantenimiento_Cliente()
         {
             InitializeComponent();
+        }
+
+        public override Boolean Guardar()
+        {
+            try
+            {
+                string cmd = string.Format("exec Administracion.dbo.ActualizaClientes '{0}','{1}','{2}'", txtIdcli.Text.Trim(), txtNomcli.Text.Trim(), txtApecli.Text.Trim());
+
+                Utilidades.Ejecutar(cmd);
+                MessageBox.Show("se ha guardado la informacion del cliente.");
+                return true;
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("No se ha podido Guarda la informacion del cliente." + error.Message);
+                return false;
+            }
+        }
+        public override void Eliminar()
+        {
+
+            try
+            {
+                string cmd = string.Format("exec Administracion.dbo.EliminarClientes '{0}'", txtIdcli.Text.Trim());
+                Utilidades.Ejecutar(cmd);
+                MessageBox.Show("Se eliminó el Cliente.");
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("No se ha  podido eliminar el Cliente." + error.Message);
+            }
         }
     }
 }

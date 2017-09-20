@@ -112,7 +112,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FacturacionWELL.Properties.Resources.WhatsApp_Image_2017_09_03_at_11_43_48_AM;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(497, 222);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.pictureBoxUsu);

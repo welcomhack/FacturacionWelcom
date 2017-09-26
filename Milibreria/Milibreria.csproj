@@ -43,6 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ErrorTxtBox.cs">
+      <SubType>Component</SubType>
+      <Generator>ErrorTxtBox</Generator>
+    </Compile>
+    <Compile Include="ErrorTxtBox.Designer.cs">
+      <DependentUpon>ErrorTxtBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

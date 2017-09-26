@@ -32,12 +32,23 @@ namespace FacturacionWELL
             Guardar();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+       /* private void button3_Click(object sender, EventArgs e)
         {
             Eliminar();
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+            Nuevo();
+        }
+        */
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Eliminar();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
             Nuevo();
         }

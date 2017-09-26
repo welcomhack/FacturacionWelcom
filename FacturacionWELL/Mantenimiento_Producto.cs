@@ -17,37 +17,37 @@ namespace FacturacionWELL
         {
             InitializeComponent();
         }
-        private Boolean ValidarCampo()
+        public Boolean ValidarDatos()
         {
-            Boolean Ok = true;
+            bool Ok = false;
             if (txtIdpro.Text == "")
             {
-                Ok = false;
-                errorProvider1.SetError(txtIdpro, "Ingrese una ID Valida");
+                Ok = true;
+                errorProvider2.SetError(txtIdpro, "Ingrese una ID");
             }
-            else errorProvider1.Dispose();
             if (txtNompro.Text == "")
             {
-                Ok = false;
-                errorProvider1.SetError(txtNompro, "Ingrese un nombre Valido");
+                Ok = true;
+                errorProvider2.SetError(txtNompro, "Ingrese Nombre");
             }
-            else errorProvider1.Dispose();
             if (txtPrecio.Text == "")
             {
-                Ok = false;
-                errorProvider1.SetError(txtPrecio, "Ingrese un precio Valido");
+                Ok = true;
+                errorProvider2.SetError(txtPrecio, "Ingrese un Precio");
             }
-            else errorProvider1.Dispose();
-
+            
 
             return Ok;
+
         }
 
         public override Boolean Guardar()
 
         {
-            if (ValidarCampo() == true)
-            { 
+            if (ValidarDatos() == false)
+            {
+
+
                 try
                 {
                     string cmd = string.Format("exec Administracion.dbo.ActualizaArticulos '{0}','{1}','{2}'", txtIdpro.Text.Trim(), txtNompro.Text.Trim(), txtPrecio.Text.Trim());
@@ -62,10 +62,11 @@ namespace FacturacionWELL
                     MessageBox.Show("No se ha podido Guarda la informacion" + error.Message);
                     return false;
                 }
-            }
 
-            return false;
-           
+            }
+            return ValidarDatos();
+                
+            
         }
         public override void Eliminar()
         {
@@ -85,18 +86,45 @@ namespace FacturacionWELL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ValidarCampo();
+            
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ValidarCampo();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ValidarCampo();
+            
+        }
+
+
+        private void txtNompro_TextChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void Mantenimiento_Producto_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIdpro_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider2.Clear();
+        }
+
+        private void txtNompro_TextChanged_1(object sender, EventArgs e)
+        {
+            errorProvider2.Clear();
+        }
+
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider2.Clear();
         }
     }
 }

@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -46,10 +46,6 @@
             // button2
             // 
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnSalir
             // 
@@ -61,6 +57,7 @@
             this.txtIdpro.Name = "txtIdpro";
             this.txtIdpro.Size = new System.Drawing.Size(156, 20);
             this.txtIdpro.TabIndex = 55;
+            this.txtIdpro.TextChanged += new System.EventHandler(this.txtIdpro_TextChanged);
             // 
             // txtNompro
             // 
@@ -68,6 +65,7 @@
             this.txtNompro.Name = "txtNompro";
             this.txtNompro.Size = new System.Drawing.Size(156, 20);
             this.txtNompro.TabIndex = 56;
+            this.txtNompro.TextChanged += new System.EventHandler(this.txtNompro_TextChanged_1);
             // 
             // txtPrecio
             // 
@@ -75,6 +73,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(156, 20);
             this.txtPrecio.TabIndex = 57;
+            this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
             // label1
             // 
@@ -112,9 +111,9 @@
             this.label3.TabIndex = 60;
             this.label3.Text = "Precio:";
             // 
-            // errorProvider1
+            // errorProvider2
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.errorProvider2.ContainerControl = this;
             // 
             // Mantenimiento_Producto
             // 
@@ -131,6 +130,7 @@
             this.MinimumSize = new System.Drawing.Size(540, 300);
             this.Name = "Mantenimiento_Producto";
             this.Text = "Mantenimiento_Producto";
+            this.Load += new System.EventHandler(this.Mantenimiento_Producto_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.button2, 0);
@@ -142,7 +142,7 @@
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +157,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

@@ -16,7 +16,7 @@ namespace FacturacionWELL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentanaLogin());
+            Application.Run(new ConsultarProductos());
         }
     }
 }

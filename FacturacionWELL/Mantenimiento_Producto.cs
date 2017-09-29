@@ -17,6 +17,8 @@ namespace FacturacionWELL
         {
             InitializeComponent();
         }
+        Utilidades Valid = new Utilidades();
+
         public Boolean ValidarDatos()
         {
             bool Ok = false;
@@ -83,6 +85,7 @@ namespace FacturacionWELL
                 MessageBox.Show("No se ha  podido eliminar el articulo." + error.Message);
             }
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -115,6 +118,7 @@ namespace FacturacionWELL
         private void txtIdpro_TextChanged(object sender, EventArgs e)
         {
             errorProvider2.Clear();
+            
         }
 
         private void txtNompro_TextChanged_1(object sender, EventArgs e)
@@ -125,6 +129,17 @@ namespace FacturacionWELL
         private void txtPrecio_TextChanged(object sender, EventArgs e)
         {
             errorProvider2.Clear();
+        }
+
+        private void txtIdpro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            Valid.SoloNumeros(e);
+        }
+
+        private void txtNompro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Valid.SoloLetras(e);
         }
     }
 }

@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtApecli = new System.Windows.Forms.TextBox();
             this.txtNomcli = new System.Windows.Forms.TextBox();
             this.txtIdcli = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -82,6 +85,8 @@
             this.txtApecli.Name = "txtApecli";
             this.txtApecli.Size = new System.Drawing.Size(156, 20);
             this.txtApecli.TabIndex = 63;
+            this.txtApecli.TextChanged += new System.EventHandler(this.txtApecli_TextChanged);
+            this.txtApecli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApecli_KeyPress);
             // 
             // txtNomcli
             // 
@@ -89,6 +94,8 @@
             this.txtNomcli.Name = "txtNomcli";
             this.txtNomcli.Size = new System.Drawing.Size(156, 20);
             this.txtNomcli.TabIndex = 62;
+            this.txtNomcli.TextChanged += new System.EventHandler(this.txtNomcli_TextChanged);
+            this.txtNomcli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomcli_KeyPress);
             // 
             // txtIdcli
             // 
@@ -96,6 +103,12 @@
             this.txtIdcli.Name = "txtIdcli";
             this.txtIdcli.Size = new System.Drawing.Size(156, 20);
             this.txtIdcli.TabIndex = 61;
+            this.txtIdcli.TextChanged += new System.EventHandler(this.txtIdcli_TextChanged);
+            this.txtIdcli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdcli_KeyPress);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Mantenimiento_Cliente
             // 
@@ -112,6 +125,7 @@
             this.MinimumSize = new System.Drawing.Size(540, 300);
             this.Name = "Mantenimiento_Cliente";
             this.Text = "Mantenimiento_Cliente";
+            this.Load += new System.EventHandler(this.Mantenimiento_Cliente_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.button2, 0);
@@ -123,6 +137,7 @@
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +151,6 @@
         private System.Windows.Forms.TextBox txtApecli;
         private System.Windows.Forms.TextBox txtNomcli;
         private System.Windows.Forms.TextBox txtIdcli;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -58,6 +58,7 @@
             this.txtIdpro.Size = new System.Drawing.Size(156, 20);
             this.txtIdpro.TabIndex = 55;
             this.txtIdpro.TextChanged += new System.EventHandler(this.txtIdpro_TextChanged);
+            this.txtIdpro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdpro_KeyPress);
             // 
             // txtNompro
             // 
@@ -66,6 +67,7 @@
             this.txtNompro.Size = new System.Drawing.Size(156, 20);
             this.txtNompro.TabIndex = 56;
             this.txtNompro.TextChanged += new System.EventHandler(this.txtNompro_TextChanged_1);
+            this.txtNompro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNompro_KeyPress);
             // 
             // txtPrecio
             // 

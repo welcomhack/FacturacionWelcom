@@ -49,5 +49,10 @@ namespace FacturacionWELL
         {
             Application.Exit();
         }
+
+        private void FormBase_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

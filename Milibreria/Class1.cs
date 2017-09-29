@@ -26,8 +26,56 @@ namespace Milibreria
            
         }
 
-       
-       
+
+        public void SoloLetras(KeyPressEventArgs Event)
+        {
+            try
+            {
+                if (char.IsLetter(Event.KeyChar))
+                {
+                    Event.Handled = false;
+                }
+                else if (char.IsControl(Event.KeyChar))
+                {
+                    Event.Handled = false;
+                }
+                else if (char.IsSeparator(Event.KeyChar))
+                {
+                    Event.Handled = false;
+                }
+                else
+                {
+                    Event.Handled = true;
+                }
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show("error" + error);
+            }
+        }
+        public void SoloNumeros(KeyPressEventArgs Event)
+        {
+            try
+            {
+                if (char.IsNumber(Event.KeyChar))
+                {
+                    Event.Handled = false;
+                }
+                else if (char.IsControl(Event.KeyChar))
+                {
+                    Event.Handled = false;
+                }
+                else
+                {
+                    Event.Handled = true;
+                }
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show("error" + error);
+            }
+        }
 
     }
+    
 }

@@ -20,7 +20,7 @@ namespace FacturacionWELL
 
         private void VentanaUser_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+           // Application.Exit();
         }
 
         private void button5_Click(object sender, EventArgs e)

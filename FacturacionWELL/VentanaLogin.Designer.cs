@@ -112,7 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FacturacionWELL.Properties.Resources.WhatsApp_Image_2017_09_03_at_11_43_48_AM;
-            this.ClientSize = new System.Drawing.Size(497, 222);
+            this.ClientSize = new System.Drawing.Size(498, 222);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.pictureBoxUsu);
             this.Controls.Add(this.txtPass);
@@ -121,6 +121,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(514, 260);
+            this.MinimumSize = new System.Drawing.Size(514, 260);
             this.Name = "VentanaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

@@ -22,7 +22,7 @@ namespace FacturacionWELL
             //dialogo de confirmasion
             if(MessageBox.Show("Desea salir?","Aviso!",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button1)== DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }
         }
         public virtual void Eliminar()

@@ -46,11 +46,17 @@
     <Compile Include="ErrorTxtBox.cs">
       <SubType>Component</SubType>
       <Generator>ErrorTxtBox</Generator>
+      <CustomToolNamespace>Milibreria</CustomToolNamespace>
     </Compile>
     <Compile Include="ErrorTxtBox.Designer.cs">
       <DependentUpon>ErrorTxtBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorTxtBox.resx">
+      <DependentUpon>ErrorTxtBox.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

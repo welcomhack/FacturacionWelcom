@@ -18,6 +18,10 @@ namespace FacturacionWELL
         {
             InitializeComponent();
         }
+        Mantenimiento_Cliente ManCli;
+        Mantenimiento_Producto ManPro;
+        ConsultarCliente ConsCli;
+        ConsultarProductos ConsPro;
 
         private void ShowNewForm(object sender, EventArgs e)
         {
@@ -106,21 +110,69 @@ namespace FacturacionWELL
 
         private void Contenedor_Prinsipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Mantenimiento_Cliente ManCli = new Mantenimiento_Cliente();
-            ManCli.MdiParent = this;
-            ManCli.Show();
+            if (ManCli==null )
+            {
+
+                Mantenimiento_Cliente ManCli = new Mantenimiento_Cliente();
+                ManCli.MdiParent = this;
+                ManCli.Show();
+                
+            }
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Mantenimiento_Producto ManPro = new Mantenimiento_Producto();
-            ManPro.MdiParent = this;
-            ManPro.Show();
+            if (ManPro == null)
+            {
+
+                Mantenimiento_Producto ManPro = new Mantenimiento_Producto();
+                ManPro.MdiParent = this;
+                ManPro.Show();
+            }
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ConsCli == null)
+            {
+
+                ConsultarCliente ConsCli = new ConsultarCliente();
+                ConsCli.MdiParent = this;
+                ConsCli.Show();
+            }
+
+        }
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ConsPro == null)
+            {
+
+                ConsultarProductos ConsPro = new ConsultarProductos();
+                ConsPro.MdiParent = this;
+                ConsPro.Show();
+            }
+        }
+
+        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Contenedor_Prinsipal_FormClosed_1(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void facturasionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion Factu = new Facturacion();
+            Factu.MdiParent = this;
+            Factu.Show();
         }
     }
 }

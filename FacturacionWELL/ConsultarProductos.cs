@@ -25,6 +25,10 @@ namespace FacturacionWELL
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            if (textBox1.Text.Trim() == "")
+            {
+                dataGridView1.DataSource = LlenarDatGV("Administracion.dbo.Articulo").Tables[0];
+            }
             if (string.IsNullOrEmpty(textBox1.Text.Trim()) == false)
             {
                 try

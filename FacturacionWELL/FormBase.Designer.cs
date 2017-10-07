@@ -55,7 +55,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormBase";
             this.Text = "FormBase";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormBase_FormClosed);
             this.Load += new System.EventHandler(this.FormBase_Load);
             this.ResumeLayout(false);
 

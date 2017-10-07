@@ -45,10 +45,7 @@ namespace FacturacionWELL
 
         }
 
-        private void FormBase_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private void FormBase_Load(object sender, EventArgs e)
         {

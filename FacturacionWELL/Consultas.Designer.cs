@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSeleccionar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,16 +41,16 @@
             // 
             this.btnSalir.Location = new System.Drawing.Point(627, 392);
             // 
-            // button1
+            // btnSeleccionar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(35, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 31);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "Seleccionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeleccionar.Location = new System.Drawing.Point(35, 392);
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.Size = new System.Drawing.Size(89, 31);
+            this.btnSeleccionar.TabIndex = 51;
+            this.btnSeleccionar.Text = "Seleccionar";
+            this.btnSeleccionar.UseVisualStyleBackColor = true;
+            this.btnSeleccionar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -115,12 +115,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSeleccionar);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.Load += new System.EventHandler(this.Consultas_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnSeleccionar, 0);
             this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);
@@ -135,7 +135,7 @@
         #endregion
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnSeleccionar;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button button3;

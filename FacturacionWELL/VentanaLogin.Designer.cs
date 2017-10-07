@@ -82,6 +82,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(152, 20);
             this.txtPass.TabIndex = 1;
+            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBoxUsu
             // 

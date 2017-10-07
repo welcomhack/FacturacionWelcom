@@ -30,6 +30,14 @@
         {
             this.SuspendLayout();
             // 
+            // textBox1
+            // 
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button3
+            // 
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // ConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

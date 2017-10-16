@@ -55,5 +55,35 @@ namespace FacturacionWELL
             this.Hide();
             Conp.Show();
         }
+
+        private void lvlNomAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvlUsAdmin_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdministrarUsuarios AdmiUs = new AdministrarUsuarios();
+            AdmiUs.Show();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Desea salir de la Aplicacion?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
+        }
     }
 }

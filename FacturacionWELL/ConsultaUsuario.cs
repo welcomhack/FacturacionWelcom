@@ -11,28 +11,28 @@ using Milibreria;
 
 namespace FacturacionWELL
 {
-    public partial class ConsultarCliente : Consultas
+    public partial class ConsultaUsuario : Consultas
     {
-        public ConsultarCliente()
+        public ConsultaUsuario()
         {
             InitializeComponent();
         }
 
-        private void ConsultarCliente_Load(object sender, EventArgs e)
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = LlenarDatGV("Administracion.dbo.Cliente").Tables[0];
+            this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void ConsultaUsuario_Load(object sender, EventArgs e)
         {
-            
+            dataGridView1.DataSource = LlenarDatGV("Administracion.dbo.Usuarios").Tables[0];
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Trim() == "")
             {
-                dataGridView1.DataSource = LlenarDatGV("Administracion.dbo.Cliente").Tables[0];
+                dataGridView1.DataSource = LlenarDatGV("Administracion.dbo.Usuarios").Tables[0];
             }
             if (string.IsNullOrEmpty(textBox1.Text.Trim()) == false)
             {
@@ -40,7 +40,7 @@ namespace FacturacionWELL
                 {
 
                     DataSet ds;
-                    string cmd = "Select * from Administracion.dbo.Cliente where Nom_cli like ('%" + textBox1.Text.Trim() + "%')";
+                    string cmd = "Select * from Administracion.dbo.Usuarios where Nom_usu like ('%" + textBox1.Text.Trim() + "%')";
                     ds = Utilidades.Ejecutar(cmd);
                     dataGridView1.DataSource = ds.Tables[0];
                 }
@@ -49,16 +49,6 @@ namespace FacturacionWELL
                     MessageBox.Show("Ocurrió un error! " + error.Message);
                 }
             }
-        }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void btnSeleccionar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

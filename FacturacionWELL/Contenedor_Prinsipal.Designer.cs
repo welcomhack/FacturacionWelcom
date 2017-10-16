@@ -419,7 +419,7 @@
             // facturasionToolStripMenuItem
             // 
             this.facturasionToolStripMenuItem.Name = "facturasionToolStripMenuItem";
-            this.facturasionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.facturasionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.facturasionToolStripMenuItem.Text = "Facturación";
             this.facturasionToolStripMenuItem.Click += new System.EventHandler(this.facturasionToolStripMenuItem_Click);
             // 
@@ -450,7 +450,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FacturacionWELL.Properties.Resources.WhatsApp_Image_2017_09_03_at_11_43_48_AM;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1185, 475);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);

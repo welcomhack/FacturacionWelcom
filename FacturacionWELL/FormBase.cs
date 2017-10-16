@@ -17,14 +17,7 @@ namespace FacturacionWELL
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            //dialogo de confirmasion
-            if(MessageBox.Show("Desea salir?","Aviso!",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button1)== DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
+        
         public virtual void Eliminar()
         {
 
@@ -50,6 +43,64 @@ namespace FacturacionWELL
         private void FormBase_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            //DialogResult = DialogResult.OK;
+           // Close();
+            //dialogo de confirmasion
+            /* if (MessageBox.Show("Desea salir?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+             {
+
+                  Application.Exit();
+             }*/
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+                
+           
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+
+            }else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            //dialogo de confirmasion
+            if (MessageBox.Show("Desea salir?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

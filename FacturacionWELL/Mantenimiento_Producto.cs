@@ -42,6 +42,13 @@ namespace FacturacionWELL
             return Ok;
 
         }
+        public override void Consultar()
+        {
+
+            this.Hide();
+            ConsultarProductos ConsPro = new ConsultarProductos();
+            ConsPro.Show();
+        }
 
         public override Boolean Guardar()
 
@@ -55,7 +62,7 @@ namespace FacturacionWELL
                     string cmd = string.Format("exec Administracion.dbo.ActualizaArticulos '{0}','{1}','{2}'", txtIdpro.Text.Trim(), txtNompro.Text.Trim(), txtPrecio.Text.Trim());
 
                     Utilidades.Ejecutar(cmd);
-                    MessageBox.Show("se ha guardado la informacion.");
+                    MessageBox.Show("se ha guardado la informacion del Producto:  "+txtNompro.Text);
                     return true;
 
                 }
@@ -85,7 +92,14 @@ namespace FacturacionWELL
                 MessageBox.Show("No se ha  podido eliminar el articulo." + error.Message);
             }
         }
-        
+        public override void Nuevo()
+        {
+            txtIdpro.Text = "";
+            txtNompro.Text = "";
+            txtPrecio.Text = "";
+            txtIdpro.Focus();
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -140,6 +154,16 @@ namespace FacturacionWELL
         private void txtNompro_KeyPress(object sender, KeyPressEventArgs e)
         {
             Valid.SoloLetras(e);
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -50,5 +50,15 @@ namespace FacturacionWELL
             
 
         }
+
+        private void txtIdcli_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

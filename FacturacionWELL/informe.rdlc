@@ -594,7 +594,7 @@
         <Top>6.08224cm</Top>
         <Left>3.59926cm</Left>
         <Height>1.2cm</Height>
-        <Width>14.85983cm</Width>
+        <Width>14.85982cm</Width>
         <ZIndex>9</ZIndex>
         <Style>
           <Border>
@@ -602,6 +602,41 @@
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Total:</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.86516cm</Top>
+        <Left>14.93063cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.93934cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>6.15625in</Height>
     <Style />

@@ -117,7 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGoAAAAoCAYAAAAWsW/wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMYSURBVHhe7Zo9aFNRFMeLSimKSqmK9fujoijVoogftWmS
+        1nyn7yWmijg5ODm5OAmCIE4u3Z1EF8FBJ7ciUpSi0jq01FKaYkORakQRHITj/d+QmOSdmLSY3D44w2+7
+        97WcX8495513myKRCAkrHxHlEkSUSxBRLkFEuQQR5RKWLOpGPEwPk0Eas700kfDSYspHvy/3CVVAnBAv
+        gPjdGgix8a1ETaIGo2F6bvVRdtBHC9EzNNO5j8ba2+j9llZ6va6FhpuahCogTogXQPw+nT9Jvy75adj2
+        09VYmI17MVVFPbb66esF9Us4tItGWprZf0JYHi9Xr6KJve20aHt0IthR3gGoKApZNK6Ot6ljHfSqeQ37
+        h4T/gxamEmEm0UtXVNw5H6wopOJHy0Pvtm1iHyzUh9HW9ZSxeui66gPKnThEIZMgCZu4hwn1BeVlYeCc
+        o245ROG4k0wyy5sNa2lW1S0kTd5LiainqnGYVB0Jt1loLON7ttKI5XOKQhHLJnt1YeM2Co3nc+xsoV4V
+        RKE9ROfBbRDM8GHHZhq1c1mlRaF//6ZeZqUNX3l8T3n1aadFYZyBN2VuoWCW2dNHaMgO5kQ9s/tp6uBO
+        dqFglvzxp0XNp/x6dsctFMyCVj170Z8Thenu27aN7ELBLHgBhh8t6ocyhqkut1AwC6bumLJrUS/sPprs
+        2M4uFMyCkoRvf1rUfStI6e5OdqFglumj++lRIpAThZnST/UexS0UzJKfTmhRAC0gWkFusWAGfMGYS3pL
+        R0iwBnvcBsEMc77jdMfK3a0oiAKSVSuH4mxyiMJMKW31yIUVw2DmOh/vpmuxvzeVSkQBHIEZdQTK5w5z
+        pP0n6G48UOLFIQrcjge1LLl11FiQSZA0FOt3OGFFAZ1Z6hiUiUVjQE3CcVeeSXkqigKoWbjZmQmdkssu
+        dQL9QNrTpRuH4ppUzj9F5bkZD+kHfVEZNtN1QGeZ1LDlg/hNH96tbx3jqvM9K8jGvZiaROWB8QeJgM4y
+        DAqL71YLtYP4PVFxxD1+Ls4cSxIlmENEuQQR5RJElEsQUa4gQn8Ab6dUHpEjzFkAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAQAAEABACLEAAAZgAAAAAAAAABAAgA2C0AAPEQAAAAAAAAAQAgANhxAADJPgAAgIAQAAEA
@@ -2501,4 +2523,7 @@
         AA==
 </value>
   </data>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
 </root>

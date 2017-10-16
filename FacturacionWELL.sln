@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturacionWELL", "FacturacionWELL\FacturacionWELL.csproj", "{C6E140A2-D55A-4381-A39F-09385BBF8D0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturacionWELL2.0", "FacturacionWELL\FacturacionWELL2.0.csproj", "{C6E140A2-D55A-4381-A39F-09385BBF8D0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milibreria", "Milibreria\Milibreria.csproj", "{78F03460-40E6-4A2B-AAB7-D891C69E248D}"
 EndProject

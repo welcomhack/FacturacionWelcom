@@ -41,6 +41,13 @@ namespace FacturacionWELL
             return Ok;
 
         }
+        public override void Consultar()
+        {
+            this.Hide();
+            ConsultarCliente ConCli = new ConsultarCliente();
+            ConCli.Show();
+
+        }
 
         public override Boolean Guardar()
         {
@@ -78,6 +85,13 @@ namespace FacturacionWELL
             {
                 MessageBox.Show("No se ha  podido eliminar el Cliente." + error.Message);
             }
+        }
+        public override void Nuevo()
+        {
+            txtIdcli.Text = "";
+            txtNomcli.Text = "";
+            txtApecli.Text = "";
+            txtIdcli.Focus();
         }
 
         private void Mantenimiento_Cliente_Load(object sender, EventArgs e)
@@ -118,6 +132,11 @@ namespace FacturacionWELL
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
     

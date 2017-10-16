@@ -83,6 +83,16 @@ namespace FacturacionWELL.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap User {
+            get {
+                object obj = ResourceManager.GetObject("User", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2017_09_03_at_11_43_48_AM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2017-09-03 at 11.43.48 AM", resourceCulture);

@@ -119,5 +119,15 @@ namespace FacturacionWELL
                 txtFoto.Text = ConUsu.dataGridView1.Rows[ConUsu.dataGridView1.CurrentRow.Index].Cells[5].Value.ToString();
             }
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtIdUsu.Text = "";
+            txtNomUsu.Text = "";
+            txtCuenta.Text = "";
+            txtPass.Text = "";
+            txtPermiso.Text = "";
+            txtFoto.Text = "";
+        }
     }
 }

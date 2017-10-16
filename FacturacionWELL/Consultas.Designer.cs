@@ -43,32 +43,32 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(28)))), ((int)(((byte)(21)))));
             this.bunifuFlatButton1.IconRightVisible = true;
             this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(686, 9);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(714, 5);
             // 
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.IconRightVisible = true;
             this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(624, 9);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(652, 5);
             // 
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.bunifuFlatButton3.IconRightVisible = true;
             this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(656, 9);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(684, 5);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(610, 412);
+            this.btnSalir.Location = new System.Drawing.Point(610, 447);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(32, 28);
+            this.label1.Location = new System.Drawing.Point(32, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 19);
             this.label1.TabIndex = 53;
@@ -83,7 +83,7 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 99);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -108,7 +108,7 @@
             this.button2.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.button2.IdleForecolor = System.Drawing.Color.White;
             this.button2.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(359, 412);
+            this.button2.Location = new System.Drawing.Point(359, 447);
             this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 38);
@@ -134,7 +134,7 @@
             this.btnSeleccionar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnSeleccionar.IdleForecolor = System.Drawing.Color.White;
             this.btnSeleccionar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSeleccionar.Location = new System.Drawing.Point(116, 412);
+            this.btnSeleccionar.Location = new System.Drawing.Point(116, 447);
             this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(106, 38);
@@ -160,7 +160,7 @@
             this.button3.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.button3.IdleForecolor = System.Drawing.Color.White;
             this.button3.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(359, 14);
+            this.button3.Location = new System.Drawing.Point(359, 49);
             this.button3.Margin = new System.Windows.Forms.Padding(5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 38);
@@ -176,9 +176,9 @@
             this.textBox1.BorderThickness = 2;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.isPassword = false;
-            this.textBox1.Location = new System.Drawing.Point(116, 20);
+            this.textBox1.Location = new System.Drawing.Point(116, 55);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(190, 27);
@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 466);
+            this.ClientSize = new System.Drawing.Size(753, 505);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnSeleccionar);

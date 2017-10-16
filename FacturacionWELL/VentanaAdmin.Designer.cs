@@ -33,13 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lvlNomAdmin = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lvlUsAdmin = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lvlCodigo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.button1 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button3 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button4 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lvlNomAdmin = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lvlUsAdmin = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lvlCodigo = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,18 +75,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(12, 132);
+            this.label3.Location = new System.Drawing.Point(55, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 19);
+            this.label3.Size = new System.Drawing.Size(28, 19);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Codigo:";
+            this.label3.Text = "ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(12, 74);
+            this.label2.Location = new System.Drawing.Point(14, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 19);
             this.label2.TabIndex = 14;
@@ -97,7 +97,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Location = new System.Drawing.Point(17, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 19);
             this.label1.TabIndex = 13;
@@ -105,65 +105,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(68, 170);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 214);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(185, 195);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 174);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
-            // 
-            // lvlNomAdmin
-            // 
-            this.lvlNomAdmin.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlNomAdmin.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lvlNomAdmin.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlNomAdmin.BorderThickness = 2;
-            this.lvlNomAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lvlNomAdmin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lvlNomAdmin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lvlNomAdmin.isPassword = false;
-            this.lvlNomAdmin.Location = new System.Drawing.Point(89, 13);
-            this.lvlNomAdmin.Margin = new System.Windows.Forms.Padding(4);
-            this.lvlNomAdmin.Name = "lvlNomAdmin";
-            this.lvlNomAdmin.Size = new System.Drawing.Size(164, 27);
-            this.lvlNomAdmin.TabIndex = 0;
-            this.lvlNomAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.lvlNomAdmin.Click += new System.EventHandler(this.lvlNomAdmin_Click);
-            // 
-            // lvlUsAdmin
-            // 
-            this.lvlUsAdmin.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlUsAdmin.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lvlUsAdmin.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlUsAdmin.BorderThickness = 2;
-            this.lvlUsAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lvlUsAdmin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lvlUsAdmin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lvlUsAdmin.isPassword = false;
-            this.lvlUsAdmin.Location = new System.Drawing.Point(89, 74);
-            this.lvlUsAdmin.Margin = new System.Windows.Forms.Padding(4);
-            this.lvlUsAdmin.Name = "lvlUsAdmin";
-            this.lvlUsAdmin.Size = new System.Drawing.Size(164, 27);
-            this.lvlUsAdmin.TabIndex = 1;
-            this.lvlUsAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.lvlUsAdmin.OnValueChanged += new System.EventHandler(this.lvlUsAdmin_OnValueChanged);
-            // 
-            // lvlCodigo
-            // 
-            this.lvlCodigo.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlCodigo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lvlCodigo.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlCodigo.BorderThickness = 2;
-            this.lvlCodigo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lvlCodigo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lvlCodigo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lvlCodigo.isPassword = false;
-            this.lvlCodigo.Location = new System.Drawing.Point(90, 126);
-            this.lvlCodigo.Margin = new System.Windows.Forms.Padding(4);
-            this.lvlCodigo.Name = "lvlCodigo";
-            this.lvlCodigo.Size = new System.Drawing.Size(164, 27);
-            this.lvlCodigo.TabIndex = 2;
-            this.lvlCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // button1
             // 
@@ -269,18 +216,51 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // lvlNomAdmin
+            // 
+            this.lvlNomAdmin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lvlNomAdmin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlNomAdmin.ForeColor = System.Drawing.Color.White;
+            this.lvlNomAdmin.Location = new System.Drawing.Point(89, 53);
+            this.lvlNomAdmin.Name = "lvlNomAdmin";
+            this.lvlNomAdmin.Size = new System.Drawing.Size(163, 25);
+            this.lvlNomAdmin.TabIndex = 62;
+            this.lvlNomAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lvlUsAdmin
+            // 
+            this.lvlUsAdmin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lvlUsAdmin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlUsAdmin.ForeColor = System.Drawing.Color.White;
+            this.lvlUsAdmin.Location = new System.Drawing.Point(89, 114);
+            this.lvlUsAdmin.Name = "lvlUsAdmin";
+            this.lvlUsAdmin.Size = new System.Drawing.Size(163, 25);
+            this.lvlUsAdmin.TabIndex = 63;
+            this.lvlUsAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lvlCodigo
+            // 
+            this.lvlCodigo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lvlCodigo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlCodigo.ForeColor = System.Drawing.Color.White;
+            this.lvlCodigo.Location = new System.Drawing.Point(89, 172);
+            this.lvlCodigo.Name = "lvlCodigo";
+            this.lvlCodigo.Size = new System.Drawing.Size(163, 25);
+            this.lvlCodigo.TabIndex = 64;
+            this.lvlCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // VentanaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 400);
+            this.Controls.Add(this.lvlCodigo);
+            this.Controls.Add(this.lvlUsAdmin);
+            this.Controls.Add(this.lvlNomAdmin);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lvlCodigo);
-            this.Controls.Add(this.lvlUsAdmin);
-            this.Controls.Add(this.lvlNomAdmin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -299,13 +279,13 @@
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
-            this.Controls.SetChildIndex(this.lvlNomAdmin, 0);
-            this.Controls.SetChildIndex(this.lvlUsAdmin, 0);
-            this.Controls.SetChildIndex(this.lvlCodigo, 0);
             this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.lvlNomAdmin, 0);
+            this.Controls.SetChildIndex(this.lvlUsAdmin, 0);
+            this.Controls.SetChildIndex(this.lvlCodigo, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -318,12 +298,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lvlNomAdmin;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lvlUsAdmin;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lvlCodigo;
         private Bunifu.Framework.UI.BunifuThinButton2 button1;
         private Bunifu.Framework.UI.BunifuThinButton2 button2;
         private Bunifu.Framework.UI.BunifuThinButton2 button3;
         private Bunifu.Framework.UI.BunifuThinButton2 button4;
+        private Bunifu.Framework.UI.BunifuCustomLabel lvlNomAdmin;
+        private Bunifu.Framework.UI.BunifuCustomLabel lvlUsAdmin;
+        private Bunifu.Framework.UI.BunifuCustomLabel lvlCodigo;
     }
 }

@@ -132,7 +132,7 @@
             this.txtApecli.BorderThickness = 2;
             this.txtApecli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtApecli.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtApecli.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtApecli.ForeColor = System.Drawing.Color.White;
             this.txtApecli.isPassword = false;
             this.txtApecli.Location = new System.Drawing.Point(141, 150);
             this.txtApecli.Margin = new System.Windows.Forms.Padding(4);
@@ -151,7 +151,7 @@
             this.txtNomcli.BorderThickness = 2;
             this.txtNomcli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomcli.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNomcli.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtNomcli.ForeColor = System.Drawing.Color.White;
             this.txtNomcli.isPassword = false;
             this.txtNomcli.Location = new System.Drawing.Point(141, 105);
             this.txtNomcli.Margin = new System.Windows.Forms.Padding(4);
@@ -170,7 +170,7 @@
             this.txtIdcli.BorderThickness = 2;
             this.txtIdcli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIdcli.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtIdcli.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdcli.ForeColor = System.Drawing.Color.White;
             this.txtIdcli.isPassword = false;
             this.txtIdcli.Location = new System.Drawing.Point(141, 60);
             this.txtIdcli.Margin = new System.Windows.Forms.Padding(4);

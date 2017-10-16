@@ -36,9 +36,9 @@
             this.button4 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button3 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button1 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.lvlCodigo = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lvlUs = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lvlNomUs = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.lvlCodigo = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lvlUs = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lvlNomUs = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +85,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(28, 98);
+            this.label2.Location = new System.Drawing.Point(34, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 19);
             this.label2.TabIndex = 1;
@@ -96,11 +96,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(26, 133);
+            this.label3.Location = new System.Drawing.Point(75, 133);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 19);
+            this.label3.Size = new System.Drawing.Size(28, 19);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Codigo:";
+            this.label3.Text = "ID:";
             // 
             // pictureBox1
             // 
@@ -161,6 +161,7 @@
             this.button3.Size = new System.Drawing.Size(155, 46);
             this.button3.TabIndex = 4;
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -190,54 +191,36 @@
             // 
             // lvlCodigo
             // 
-            this.lvlCodigo.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlCodigo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lvlCodigo.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlCodigo.BorderThickness = 2;
-            this.lvlCodigo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lvlCodigo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lvlCodigo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lvlCodigo.isPassword = false;
-            this.lvlCodigo.Location = new System.Drawing.Point(104, 133);
-            this.lvlCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.lvlCodigo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lvlCodigo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlCodigo.ForeColor = System.Drawing.Color.White;
+            this.lvlCodigo.Location = new System.Drawing.Point(105, 133);
             this.lvlCodigo.Name = "lvlCodigo";
-            this.lvlCodigo.Size = new System.Drawing.Size(164, 27);
-            this.lvlCodigo.TabIndex = 2;
-            this.lvlCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lvlCodigo.Size = new System.Drawing.Size(163, 25);
+            this.lvlCodigo.TabIndex = 67;
+            this.lvlCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lvlUs
             // 
-            this.lvlUs.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlUs.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lvlUs.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlUs.BorderThickness = 2;
-            this.lvlUs.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lvlUs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lvlUs.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lvlUs.isPassword = false;
-            this.lvlUs.Location = new System.Drawing.Point(104, 98);
-            this.lvlUs.Margin = new System.Windows.Forms.Padding(4);
+            this.lvlUs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lvlUs.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlUs.ForeColor = System.Drawing.Color.White;
+            this.lvlUs.Location = new System.Drawing.Point(105, 98);
             this.lvlUs.Name = "lvlUs";
-            this.lvlUs.Size = new System.Drawing.Size(164, 27);
-            this.lvlUs.TabIndex = 1;
-            this.lvlUs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lvlUs.Size = new System.Drawing.Size(163, 25);
+            this.lvlUs.TabIndex = 66;
+            this.lvlUs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lvlNomUs
             // 
-            this.lvlNomUs.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlNomUs.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lvlNomUs.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.lvlNomUs.BorderThickness = 2;
-            this.lvlNomUs.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lvlNomUs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lvlNomUs.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lvlNomUs.isPassword = false;
-            this.lvlNomUs.Location = new System.Drawing.Point(104, 63);
-            this.lvlNomUs.Margin = new System.Windows.Forms.Padding(4);
+            this.lvlNomUs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lvlNomUs.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlNomUs.ForeColor = System.Drawing.Color.White;
+            this.lvlNomUs.Location = new System.Drawing.Point(105, 63);
             this.lvlNomUs.Name = "lvlNomUs";
-            this.lvlNomUs.Size = new System.Drawing.Size(164, 27);
-            this.lvlNomUs.TabIndex = 0;
-            this.lvlNomUs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lvlNomUs.Size = new System.Drawing.Size(163, 25);
+            this.lvlNomUs.TabIndex = 65;
+            this.lvlNomUs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VentanaUser
             // 
@@ -289,8 +272,8 @@
         private Bunifu.Framework.UI.BunifuThinButton2 button4;
         private Bunifu.Framework.UI.BunifuThinButton2 button3;
         private Bunifu.Framework.UI.BunifuThinButton2 button1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lvlCodigo;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lvlUs;
-        private Bunifu.Framework.UI.BunifuMetroTextbox lvlNomUs;
+        private Bunifu.Framework.UI.BunifuCustomLabel lvlCodigo;
+        private Bunifu.Framework.UI.BunifuCustomLabel lvlUs;
+        private Bunifu.Framework.UI.BunifuCustomLabel lvlNomUs;
     }
 }

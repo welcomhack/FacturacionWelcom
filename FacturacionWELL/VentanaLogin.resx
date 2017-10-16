@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnIniciar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -144,7 +141,7 @@
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAggAAAIICAYAAAAL/BZjAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxEAAAsRAX9kX5EAADeXSURBVHhe7d17kFXllfdxqyhS
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw8AAAsPAZL5A6UAADeXSURBVHhe7d17kFXllfdxqyhS
         hrcoUoYKRQ1FBlAkIgRRDIFwEYlGJCgSiUqMDDMkvBq8BUM0OF7eV18cLUmIicEbF0VBkFvfTvfpc7qh
         ubQgtA0aisTLEDVoFM6lu1Hx8rz9tENE+KlNn9Pde+39/eNTNbMyNdG99rPW6n32fp4TnHMAAACfIYMA
         ACDaZBAAAESbDAIAgGiTQQAAEG0yCAAAok0GAQBAtMkgAACINhkEAADRJoMAACDaZBAAAESbDAIAgGiT
@@ -388,7 +385,7 @@
   <data name="bunifuImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAggAAAIICAYAAAAL/BZjAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxEAAAsRAX9kX5EAACJySURBVHhe7d19rGd3XeDxiQUC
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw8AAAsPAZL5A6UAACJySURBVHhe7d19rGd3XeDxiQUC
         XawLKtPdpqloKQXb8DBO6dPM/f2GuKbRxCUxaghZ17B/GJQYVyUuKwayokhQdg2SaUtb+jSdKfN0z1VE
         QVlRQHRXNsuqoIjA6iIFW3B5sND27Dm/GdZy72eYmfu987vf7+e8/nhF8sHQfs/j+/7u756zo+97oGbd
         7J8Pdvdr+36g7+YvHf7zK/rj17+2P3bN/v7wrrv6e6842t9z2W/2d170rv72ne/pb73g/f1Nj/1gv3/H

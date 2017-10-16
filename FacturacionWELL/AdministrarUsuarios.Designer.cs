@@ -55,7 +55,7 @@
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.Red;
             this.bunifuFlatButton1.IconRightVisible = true;
             this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(559, 5);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(528, 5);
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuFlatButton2
@@ -63,18 +63,18 @@
             this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.IconRightVisible = true;
             this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(498, 5);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(470, 5);
             // 
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.bunifuFlatButton3.IconRightVisible = true;
             this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(530, 5);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(499, 5);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(454, 352);
+            this.btnSalir.Location = new System.Drawing.Point(423, 352);
             // 
             // btnNuevo
             // 
@@ -94,12 +94,13 @@
             this.btnNuevo.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnNuevo.IdleForecolor = System.Drawing.Color.White;
             this.btnNuevo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnNuevo.Location = new System.Drawing.Point(405, 229);
+            this.btnNuevo.Location = new System.Drawing.Point(374, 229);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(5);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(155, 38);
             this.btnNuevo.TabIndex = 72;
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEliminar
             // 
@@ -119,7 +120,7 @@
             this.btnEliminar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnEliminar.IdleForecolor = System.Drawing.Color.White;
             this.btnEliminar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEliminar.Location = new System.Drawing.Point(405, 182);
+            this.btnEliminar.Location = new System.Drawing.Point(374, 182);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(155, 38);
@@ -145,7 +146,7 @@
             this.btnGuardar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnGuardar.IdleForecolor = System.Drawing.Color.White;
             this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnGuardar.Location = new System.Drawing.Point(405, 133);
+            this.btnGuardar.Location = new System.Drawing.Point(374, 133);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(155, 38);
@@ -171,7 +172,7 @@
             this.btnConsultar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnConsultar.IdleForecolor = System.Drawing.Color.White;
             this.btnConsultar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnConsultar.Location = new System.Drawing.Point(405, 86);
+            this.btnConsultar.Location = new System.Drawing.Point(374, 86);
             this.btnConsultar.Margin = new System.Windows.Forms.Padding(5);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(155, 38);
@@ -187,9 +188,9 @@
             this.txtCuenta.BorderThickness = 2;
             this.txtCuenta.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCuenta.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCuenta.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCuenta.ForeColor = System.Drawing.Color.White;
             this.txtCuenta.isPassword = false;
-            this.txtCuenta.Location = new System.Drawing.Point(174, 185);
+            this.txtCuenta.Location = new System.Drawing.Point(143, 185);
             this.txtCuenta.Margin = new System.Windows.Forms.Padding(4);
             this.txtCuenta.Name = "txtCuenta";
             this.txtCuenta.Size = new System.Drawing.Size(164, 27);
@@ -204,9 +205,9 @@
             this.txtNomUsu.BorderThickness = 2;
             this.txtNomUsu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNomUsu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtNomUsu.ForeColor = System.Drawing.Color.White;
             this.txtNomUsu.isPassword = false;
-            this.txtNomUsu.Location = new System.Drawing.Point(173, 133);
+            this.txtNomUsu.Location = new System.Drawing.Point(142, 133);
             this.txtNomUsu.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomUsu.Name = "txtNomUsu";
             this.txtNomUsu.Size = new System.Drawing.Size(164, 27);
@@ -221,9 +222,9 @@
             this.txtIdUsu.BorderThickness = 2;
             this.txtIdUsu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIdUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtIdUsu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdUsu.ForeColor = System.Drawing.Color.White;
             this.txtIdUsu.isPassword = false;
-            this.txtIdUsu.Location = new System.Drawing.Point(173, 72);
+            this.txtIdUsu.Location = new System.Drawing.Point(142, 72);
             this.txtIdUsu.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdUsu.Name = "txtIdUsu";
             this.txtIdUsu.Size = new System.Drawing.Size(164, 27);
@@ -235,7 +236,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(52, 185);
+            this.label3.Location = new System.Drawing.Point(60, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 19);
             this.label3.TabIndex = 78;
@@ -246,7 +247,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(52, 127);
+            this.label2.Location = new System.Drawing.Point(53, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 19);
             this.label2.TabIndex = 77;
@@ -257,7 +258,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(52, 72);
+            this.label1.Location = new System.Drawing.Point(38, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 19);
             this.label1.TabIndex = 76;
@@ -268,7 +269,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(52, 237);
+            this.label4.Location = new System.Drawing.Point(85, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 19);
             this.label4.TabIndex = 79;
@@ -280,7 +281,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(52, 277);
+            this.label5.Location = new System.Drawing.Point(51, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 19);
             this.label5.TabIndex = 80;
@@ -291,7 +292,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(52, 318);
+            this.label6.Location = new System.Drawing.Point(85, 310);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 19);
             this.label6.TabIndex = 81;
@@ -305,9 +306,9 @@
             this.txtPass.BorderThickness = 2;
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPass.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPass.ForeColor = System.Drawing.Color.White;
             this.txtPass.isPassword = false;
-            this.txtPass.Location = new System.Drawing.Point(174, 237);
+            this.txtPass.Location = new System.Drawing.Point(143, 237);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(164, 27);
@@ -322,9 +323,9 @@
             this.txtPermiso.BorderThickness = 2;
             this.txtPermiso.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPermiso.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPermiso.ForeColor = System.Drawing.Color.White;
             this.txtPermiso.isPassword = false;
-            this.txtPermiso.Location = new System.Drawing.Point(174, 277);
+            this.txtPermiso.Location = new System.Drawing.Point(143, 277);
             this.txtPermiso.Margin = new System.Windows.Forms.Padding(4);
             this.txtPermiso.Name = "txtPermiso";
             this.txtPermiso.Size = new System.Drawing.Size(164, 27);
@@ -339,9 +340,9 @@
             this.txtFoto.BorderThickness = 2;
             this.txtFoto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFoto.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFoto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtFoto.ForeColor = System.Drawing.Color.White;
             this.txtFoto.isPassword = false;
-            this.txtFoto.Location = new System.Drawing.Point(173, 310);
+            this.txtFoto.Location = new System.Drawing.Point(142, 310);
             this.txtFoto.Margin = new System.Windows.Forms.Padding(4);
             this.txtFoto.Name = "txtFoto";
             this.txtFoto.Size = new System.Drawing.Size(387, 27);
@@ -356,7 +357,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 406);
+            this.ClientSize = new System.Drawing.Size(564, 406);
             this.Controls.Add(this.txtFoto);
             this.Controls.Add(this.txtPermiso);
             this.Controls.Add(this.txtPass);
@@ -373,8 +374,8 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnConsultar);
-            this.MaximumSize = new System.Drawing.Size(596, 406);
-            this.MinimumSize = new System.Drawing.Size(596, 406);
+            this.MaximumSize = new System.Drawing.Size(564, 406);
+            this.MinimumSize = new System.Drawing.Size(564, 406);
             this.Name = "AdministrarUsuarios";
             this.Text = "AdministrarUsuarios";
             this.Load += new System.EventHandler(this.AdministrarUsuarios_Load);

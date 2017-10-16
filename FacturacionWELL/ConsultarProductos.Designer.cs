@@ -32,11 +32,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(377, 421);
+            this.button2.Location = new System.Drawing.Point(376, 468);
             // 
             // btnSeleccionar
             // 
-            this.btnSeleccionar.Location = new System.Drawing.Point(175, 421);
+            this.btnSeleccionar.Location = new System.Drawing.Point(174, 468);
             // 
             // button3
             // 
@@ -54,7 +54,7 @@
             // 
             this.bunifuFlatButton2.IconRightVisible = true;
             this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(683, 9);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(686, 9);
             // 
             // bunifuFlatButton3
             // 
@@ -64,13 +64,13 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(610, 421);
+            this.btnSalir.Location = new System.Drawing.Point(609, 468);
             // 
             // ConsultarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 466);
+            this.ClientSize = new System.Drawing.Size(793, 533);
             this.Name = "ConsultarProductos";
             this.Text = "ConsultarProductos";
             this.Load += new System.EventHandler(this.ConsultarProductos_Load_1);

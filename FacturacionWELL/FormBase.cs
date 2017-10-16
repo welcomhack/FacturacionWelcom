@@ -16,7 +16,7 @@ namespace FacturacionWELL
         {
             InitializeComponent();
         }
-
+        
         
         public virtual void Eliminar()
         {
@@ -101,6 +101,44 @@ namespace FacturacionWELL
             {
                 Application.Exit();
             }
+        }
+
+        private void FormBase_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void FormBase_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void FormBase_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+        int MouseX = 0, MouseY = 0;
+        bool MouseDown;
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MouseDown==true)
+            {
+                MouseX = MousePosition.X - '%'+-250+'%';
+                MouseY = MousePosition.Y - '%'+-20+'%';
+                this.SetDesktopLocation(MouseX, MouseY);
+
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            MouseDown = false;
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            MouseDown = true;
         }
     }
 }

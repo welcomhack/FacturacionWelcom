@@ -61,8 +61,8 @@
             this.btnEliminar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtCodiCli = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnColocar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtAtiende = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.button7 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtAtiende = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -298,7 +298,7 @@
             this.txtCantidad.BorderThickness = 2;
             this.txtCantidad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCantidad.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCantidad.ForeColor = System.Drawing.Color.White;
             this.txtCantidad.isPassword = false;
             this.txtCantidad.Location = new System.Drawing.Point(474, 196);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
@@ -342,7 +342,7 @@
             this.txtPrecio.BorderThickness = 2;
             this.txtPrecio.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPrecio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPrecio.ForeColor = System.Drawing.Color.White;
             this.txtPrecio.isPassword = false;
             this.txtPrecio.Location = new System.Drawing.Point(349, 196);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
@@ -386,7 +386,7 @@
             this.txtDescrip.BorderThickness = 2;
             this.txtDescrip.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescrip.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDescrip.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtDescrip.ForeColor = System.Drawing.Color.White;
             this.txtDescrip.isPassword = false;
             this.txtDescrip.Location = new System.Drawing.Point(178, 196);
             this.txtDescrip.Margin = new System.Windows.Forms.Padding(4);
@@ -430,7 +430,7 @@
             this.txtCodPro.BorderThickness = 2;
             this.txtCodPro.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCodPro.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCodPro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCodPro.ForeColor = System.Drawing.Color.White;
             this.txtCodPro.isPassword = false;
             this.txtCodPro.Location = new System.Drawing.Point(44, 196);
             this.txtCodPro.Margin = new System.Windows.Forms.Padding(4);
@@ -474,7 +474,7 @@
             this.txtCli.BorderThickness = 2;
             this.txtCli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCli.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCli.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCli.ForeColor = System.Drawing.Color.White;
             this.txtCli.isPassword = false;
             this.txtCli.Location = new System.Drawing.Point(141, 154);
             this.txtCli.Margin = new System.Windows.Forms.Padding(4);
@@ -518,7 +518,7 @@
             this.txtCodiCli.BorderThickness = 2;
             this.txtCodiCli.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCodiCli.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCodiCli.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCodiCli.ForeColor = System.Drawing.Color.White;
             this.txtCodiCli.isPassword = false;
             this.txtCodiCli.Location = new System.Drawing.Point(141, 115);
             this.txtCodiCli.Margin = new System.Windows.Forms.Padding(4);
@@ -554,24 +554,6 @@
             this.btnColocar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnColocar.Click += new System.EventHandler(this.btnColocar_Click);
             // 
-            // txtAtiende
-            // 
-            this.txtAtiende.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.txtAtiende.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtAtiende.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.txtAtiende.BorderThickness = 2;
-            this.txtAtiende.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAtiende.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtAtiende.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtAtiende.isPassword = false;
-            this.txtAtiende.Location = new System.Drawing.Point(141, 72);
-            this.txtAtiende.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAtiende.Name = "txtAtiende";
-            this.txtAtiende.Size = new System.Drawing.Size(190, 27);
-            this.txtAtiende.TabIndex = 60;
-            this.txtAtiende.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAtiende.OnValueChanged += new System.EventHandler(this.txtAtiende_TextChanged);
-            // 
             // button7
             // 
             this.button7.ActiveBorderThickness = 1;
@@ -590,13 +572,24 @@
             this.button7.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.button7.IdleForecolor = System.Drawing.Color.White;
             this.button7.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button7.Location = new System.Drawing.Point(340, 149);
+            this.button7.Location = new System.Drawing.Point(436, 149);
             this.button7.Margin = new System.Windows.Forms.Padding(5);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(106, 38);
             this.button7.TabIndex = 89;
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // txtAtiende
+            // 
+            this.txtAtiende.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtAtiende.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAtiende.ForeColor = System.Drawing.Color.White;
+            this.txtAtiende.Location = new System.Drawing.Point(141, 72);
+            this.txtAtiende.Name = "txtAtiende";
+            this.txtAtiende.Size = new System.Drawing.Size(190, 25);
+            this.txtAtiende.TabIndex = 90;
+            this.txtAtiende.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Facturacion
             // 
@@ -690,7 +683,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColImporte;
-        public Bunifu.Framework.UI.BunifuMetroTextbox txtAtiende;
         public Bunifu.Framework.UI.BunifuThinButton2 button7;
         public Bunifu.Framework.UI.BunifuMetroTextbox txtCodiCli;
         public Bunifu.Framework.UI.BunifuThinButton2 btnColocar;
@@ -704,5 +696,6 @@
         public Bunifu.Framework.UI.BunifuThinButton2 btnNuevo;
         public Bunifu.Framework.UI.BunifuMetroTextbox txtCantidad;
         public Bunifu.Framework.UI.BunifuThinButton2 btnFacturar;
+        private Bunifu.Framework.UI.BunifuCustomLabel txtAtiende;
     }
 }

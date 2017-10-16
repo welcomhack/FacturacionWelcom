@@ -37,9 +37,9 @@ namespace FacturacionWELL
 
         private void VentanaLogin_Load(object sender, EventArgs e)
         {
-            txtNomAcc.Text = RecordUsu;
+            
         }
-        public static string RecordUsu ="";
+        
         private void btnIniciar_Click_1(object sender, EventArgs e)
         {
             
@@ -49,8 +49,6 @@ namespace FacturacionWELL
 
                 string CMD = string.Format("Select * FROM Administracion.dbo.Usuarios WHERE account='{0}' AND Password='{1}'", txtNomAcc.Text.Trim(), txtPass.Text.Trim());
                 DataSet ds = Utilidades.Ejecutar(CMD);
-
-                RecordUsu = ds.Tables[0].Rows[0]["account"].ToString().Trim();
 
                 codigo = ds.Tables[0].Rows[0]["id_usuario"].ToString().Trim();
 

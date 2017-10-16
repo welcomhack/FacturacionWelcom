@@ -30,6 +30,14 @@
         {
             this.SuspendLayout();
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(359, 444);
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.Location = new System.Drawing.Point(116, 444);
+            // 
             // button3
             // 
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -45,17 +53,22 @@
             // 
             this.bunifuFlatButton2.IconRightVisible = true;
             this.bunifuFlatButton2.IconVisible = true;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(655, 5);
             // 
             // bunifuFlatButton3
             // 
             this.bunifuFlatButton3.IconRightVisible = true;
             this.bunifuFlatButton3.IconVisible = true;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(610, 444);
+            // 
             // ConsultaUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 466);
+            this.ClientSize = new System.Drawing.Size(744, 496);
             this.Name = "ConsultaUsuario";
             this.Text = "ConsultaUsuario";
             this.Load += new System.EventHandler(this.ConsultaUsuario_Load);

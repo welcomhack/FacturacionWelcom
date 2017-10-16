@@ -130,7 +130,7 @@
             this.txtPrecio.BorderThickness = 2;
             this.txtPrecio.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPrecio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPrecio.ForeColor = System.Drawing.Color.White;
             this.txtPrecio.isPassword = false;
             this.txtPrecio.Location = new System.Drawing.Point(148, 138);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
@@ -148,7 +148,7 @@
             this.txtNompro.BorderThickness = 2;
             this.txtNompro.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNompro.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNompro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtNompro.ForeColor = System.Drawing.Color.White;
             this.txtNompro.isPassword = false;
             this.txtNompro.Location = new System.Drawing.Point(148, 93);
             this.txtNompro.Margin = new System.Windows.Forms.Padding(4);
@@ -167,7 +167,7 @@
             this.txtIdpro.BorderThickness = 2;
             this.txtIdpro.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIdpro.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtIdpro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdpro.ForeColor = System.Drawing.Color.White;
             this.txtIdpro.isPassword = false;
             this.txtIdpro.Location = new System.Drawing.Point(148, 48);
             this.txtIdpro.Margin = new System.Windows.Forms.Padding(4);

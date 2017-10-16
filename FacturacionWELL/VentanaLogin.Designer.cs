@@ -117,7 +117,7 @@
             this.txtNomAcc.BorderThickness = 2;
             this.txtNomAcc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomAcc.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNomAcc.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtNomAcc.ForeColor = System.Drawing.Color.White;
             this.txtNomAcc.isPassword = false;
             this.txtNomAcc.Location = new System.Drawing.Point(83, 63);
             this.txtNomAcc.Margin = new System.Windows.Forms.Padding(4);
@@ -135,7 +135,7 @@
             this.txtPass.BorderThickness = 2;
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPass.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPass.ForeColor = System.Drawing.Color.White;
             this.txtPass.isPassword = true;
             this.txtPass.Location = new System.Drawing.Point(83, 121);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
@@ -174,9 +174,10 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(112)))), ((int)(((byte)(0)))));
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(187, 0);
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 4);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(74, 28);
             this.bunifuCustomLabel1.TabIndex = 64;

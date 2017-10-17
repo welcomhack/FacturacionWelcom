@@ -60,5 +60,21 @@ namespace FacturacionWELL
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+
+                DataSet ds;
+                string cmd = "Select * from Administracion.dbo.Cliente where Nom_cli like ('%" + textBox1.Text.Trim() + "%')";
+                ds = Utilidades.Ejecutar(cmd);
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ocurrió un error! " + error.Message);
+            }
+        }
     }
 }

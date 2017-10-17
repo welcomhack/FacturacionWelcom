@@ -45,9 +45,14 @@ namespace FacturacionWELL
         public override void Consultar()
         {
 
-            this.Hide();
-            ConsultarProductos ConsPro = new ConsultarProductos();
-            ConsPro.Show();
+            ConsultarProductos CosuPro = new ConsultarProductos();
+            CosuPro.ShowDialog();
+            if (CosuPro.DialogResult == DialogResult.OK)
+            {
+                txtIdpro.Text = CosuPro.dataGridView1.Rows[CosuPro.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                txtNompro.Text = CosuPro.dataGridView1.Rows[CosuPro.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+                txtPrecio.Text = CosuPro.dataGridView1.Rows[CosuPro.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
+            }
         }
 
         public override Boolean Guardar()
@@ -164,6 +169,11 @@ namespace FacturacionWELL
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Valid.SoloNumeros(e);
         }
     }
 }

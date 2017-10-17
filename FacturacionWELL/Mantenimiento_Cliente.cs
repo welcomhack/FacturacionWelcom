@@ -43,9 +43,14 @@ namespace FacturacionWELL
         }
         public override void Consultar()
         {
-            this.Hide();
-            ConsultarCliente ConCli = new ConsultarCliente();
-            ConCli.Show();
+            ConsultarCliente CosuCli = new ConsultarCliente();
+            CosuCli.ShowDialog();
+            if (CosuCli.DialogResult == DialogResult.OK)
+            {
+                txtIdcli.Text = CosuCli.dataGridView1.Rows[CosuCli.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                txtNomcli.Text = CosuCli.dataGridView1.Rows[CosuCli.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+                txtApecli.Text = CosuCli.dataGridView1.Rows[CosuCli.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
+            }
 
         }
 

@@ -18,10 +18,18 @@ namespace FacturacionWELL
         {
             InitializeComponent();
         }
+#pragma warning disable CS0649 // El campo 'Contenedor_Prinsipal.ManCli' nunca se asigna y siempre tendrá el valor predeterminado null
         Mantenimiento_Cliente ManCli;
+#pragma warning restore CS0649 // El campo 'Contenedor_Prinsipal.ManCli' nunca se asigna y siempre tendrá el valor predeterminado null
+#pragma warning disable CS0649 // El campo 'Contenedor_Prinsipal.ManPro' nunca se asigna y siempre tendrá el valor predeterminado null
         Mantenimiento_Producto ManPro;
+#pragma warning restore CS0649 // El campo 'Contenedor_Prinsipal.ManPro' nunca se asigna y siempre tendrá el valor predeterminado null
+#pragma warning disable CS0649 // El campo 'Contenedor_Prinsipal.ConsCli' nunca se asigna y siempre tendrá el valor predeterminado null
         ConsultarCliente ConsCli;
+#pragma warning restore CS0649 // El campo 'Contenedor_Prinsipal.ConsCli' nunca se asigna y siempre tendrá el valor predeterminado null
+#pragma warning disable CS0649 // El campo 'Contenedor_Prinsipal.ConsPro' nunca se asigna y siempre tendrá el valor predeterminado null
         ConsultarProductos ConsPro;
+#pragma warning restore CS0649 // El campo 'Contenedor_Prinsipal.ConsPro' nunca se asigna y siempre tendrá el valor predeterminado null
 
         private void ShowNewForm(object sender, EventArgs e)
         {

@@ -118,7 +118,9 @@ namespace FacturacionWELL
 
         }
         int MouseX = 0, MouseY = 0;
+#pragma warning disable CS0108 // 'FormBase.MouseDown' oculta el miembro heredado 'Control.MouseDown'. Use la palabra clave new si su intención era ocultarlo.
         bool MouseDown;
+#pragma warning restore CS0108 // 'FormBase.MouseDown' oculta el miembro heredado 'Control.MouseDown'. Use la palabra clave new si su intención era ocultarlo.
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {

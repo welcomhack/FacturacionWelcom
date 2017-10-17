@@ -139,6 +139,7 @@
             this.txtPrecio.TabIndex = 2;
             this.txtPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPrecio.OnValueChanged += new System.EventHandler(this.txtPrecio_TextChanged);
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // txtNompro
             // 
@@ -218,7 +219,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+#pragma warning disable CS0169 // El campo 'Mantenimiento_Producto.errorProvider1' nunca se usa
         private System.Windows.Forms.ErrorProvider errorProvider1;
+#pragma warning restore CS0169 // El campo 'Mantenimiento_Producto.errorProvider1' nunca se usa
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtPrecio;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtNompro;

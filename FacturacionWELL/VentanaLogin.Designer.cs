@@ -43,28 +43,24 @@
             // 
             // bunifuFlatButton1
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuFlatButton1.IconRightVisible = true;
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.Location = new System.Drawing.Point(477, 3);
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Red;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuFlatButton2
             // 
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.IconRightVisible = true;
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.Location = new System.Drawing.Point(418, 3);
             // 
             // bunifuFlatButton3
             // 
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.bunifuFlatButton3.IconRightVisible = true;
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.Location = new System.Drawing.Point(447, 3);
+            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             // 
             // btnSalir
             // 

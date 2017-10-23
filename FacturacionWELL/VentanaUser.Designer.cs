@@ -39,35 +39,29 @@
             this.lvlCodigo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lvlUs = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lvlNomUs = new Bunifu.Framework.UI.BunifuCustomLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(28)))), ((int)(((byte)(21)))));
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(454, 4);
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(395, 4);
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(424, 4);
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(335, 338);
             this.btnSalir.TabIndex = 6;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(453, 3);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Location = new System.Drawing.Point(395, 3);
+            // 
+            // btnMaxi
+            // 
+            this.btnMaxi.Location = new System.Drawing.Point(424, 3);
             // 
             // label1
             // 
@@ -244,9 +238,6 @@
             this.Text = "VentanaUser";
             this.Load += new System.EventHandler(this.VentanaUser_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton2, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton3, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton1, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
@@ -257,6 +248,9 @@
             this.Controls.SetChildIndex(this.lvlNomUs, 0);
             this.Controls.SetChildIndex(this.lvlUs, 0);
             this.Controls.SetChildIndex(this.lvlCodigo, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

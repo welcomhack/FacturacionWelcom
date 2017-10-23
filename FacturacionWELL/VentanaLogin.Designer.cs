@@ -36,37 +36,32 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(477, 3);
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(418, 3);
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(447, 3);
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(358, 198);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(477, 3);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Location = new System.Drawing.Point(419, 3);
+            // 
+            // btnMaxi
+            // 
+            this.btnMaxi.Location = new System.Drawing.Point(448, 3);
             // 
             // pictureBoxUsu
             // 
@@ -200,9 +195,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VentanaLogin_FormClosed);
             this.Load += new System.EventHandler(this.VentanaLogin_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton2, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton3, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton1, 0);
             this.Controls.SetChildIndex(this.pictureBoxUsu, 0);
             this.Controls.SetChildIndex(this.btnIniciar, 0);
             this.Controls.SetChildIndex(this.txtNomAcc, 0);
@@ -210,6 +202,9 @@
             this.Controls.SetChildIndex(this.bunifuImageButton1, 0);
             this.Controls.SetChildIndex(this.bunifuImageButton2, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();

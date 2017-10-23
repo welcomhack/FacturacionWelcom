@@ -138,6 +138,36 @@ namespace FacturacionWELL
             MouseDown = false;
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMaxi_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+
+            }
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMini_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+        }
+
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             MouseDown = true;

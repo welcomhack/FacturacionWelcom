@@ -143,6 +143,11 @@ namespace FacturacionWELL
         {
             this.Hide();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
     
 }

@@ -63,36 +63,30 @@
             this.btnColocar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button7 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtAtiende = new Bunifu.Framework.UI.BunifuCustomLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(28)))), ((int)(((byte)(21)))));
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(939, 6);
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(880, 6);
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(909, 6);
-            // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(862, 533);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(944, 5);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Location = new System.Drawing.Point(886, 5);
+            // 
+            // btnMaxi
+            // 
+            this.btnMaxi.Location = new System.Drawing.Point(915, 5);
             // 
             // label1
             // 
@@ -543,7 +537,7 @@
             this.btnColocar.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnColocar.IdleBorderThickness = 1;
             this.btnColocar.IdleCornerRadius = 30;
-            this.btnColocar.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnColocar.IdleFillColor = System.Drawing.Color.LawnGreen;
             this.btnColocar.IdleForecolor = System.Drawing.Color.White;
             this.btnColocar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnColocar.Location = new System.Drawing.Point(843, 251);
@@ -627,9 +621,6 @@
             this.Text = "Facturacion";
             this.Load += new System.EventHandler(this.Facturacion_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton2, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton3, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton1, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
@@ -656,6 +647,9 @@
             this.Controls.SetChildIndex(this.txtCodiCli, 0);
             this.Controls.SetChildIndex(this.button7, 0);
             this.Controls.SetChildIndex(this.txtAtiende, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

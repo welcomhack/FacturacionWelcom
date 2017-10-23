@@ -36,6 +36,9 @@
             this.txtPrecio = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtNompro = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtIdpro = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,27 +63,23 @@
             this.button1.Location = new System.Drawing.Point(343, 38);
             this.button1.TabIndex = 3;
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconVisible = true;
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconVisible = true;
-            // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(379, 239);
             this.btnSalir.TabIndex = 7;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(503, 3);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Location = new System.Drawing.Point(445, 3);
+            // 
+            // btnMaxi
+            // 
+            this.btnMaxi.Location = new System.Drawing.Point(474, 3);
             // 
             // label1
             // 
@@ -200,15 +199,15 @@
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton2, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton3, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton1, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.txtIdpro, 0);
             this.Controls.SetChildIndex(this.txtNompro, 0);
             this.Controls.SetChildIndex(this.txtPrecio, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

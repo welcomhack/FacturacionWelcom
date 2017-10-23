@@ -47,34 +47,28 @@
             this.txtPermiso = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtFoto = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(528, 5);
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(470, 5);
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(499, 5);
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(423, 352);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(526, 3);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Location = new System.Drawing.Point(468, 3);
+            // 
+            // btnMaxi
+            // 
+            this.btnMaxi.Location = new System.Drawing.Point(497, 3);
             // 
             // btnNuevo
             // 
@@ -379,9 +373,6 @@
             this.Name = "AdministrarUsuarios";
             this.Text = "AdministrarUsuarios";
             this.Load += new System.EventHandler(this.AdministrarUsuarios_Load);
-            this.Controls.SetChildIndex(this.bunifuFlatButton1, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton2, 0);
-            this.Controls.SetChildIndex(this.bunifuFlatButton3, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.btnConsultar, 0);
             this.Controls.SetChildIndex(this.btnGuardar, 0);
@@ -399,6 +390,9 @@
             this.Controls.SetChildIndex(this.txtPass, 0);
             this.Controls.SetChildIndex(this.txtPermiso, 0);
             this.Controls.SetChildIndex(this.txtFoto, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

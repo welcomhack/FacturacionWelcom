@@ -76,5 +76,15 @@ namespace FacturacionWELL
                 MessageBox.Show("Ocurrió un error! " + error.Message);
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void textBox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

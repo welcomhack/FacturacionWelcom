@@ -87,5 +87,14 @@ namespace FacturacionWELL
                 Application.Exit();
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Desea salir de la Alicacion?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
+        }
     }
 }

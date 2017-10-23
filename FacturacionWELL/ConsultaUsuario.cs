@@ -50,5 +50,21 @@ namespace FacturacionWELL
                 }
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+
+                DataSet ds;
+                string cmd = "Select * from Administracion.dbo.Usuarios where Nom_usu like ('%" + textBox1.Text.Trim() + "%')";
+                ds = Utilidades.Ejecutar(cmd);
+                dataGridView1.DataSource = ds.Tables[0];
+            
+        }
     }
 }

@@ -175,5 +175,10 @@ namespace FacturacionWELL
         {
             Valid.SoloNumeros(e);
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

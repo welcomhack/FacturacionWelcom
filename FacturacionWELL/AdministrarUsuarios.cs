@@ -129,5 +129,10 @@ namespace FacturacionWELL
             txtPermiso.Text = "";
             txtFoto.Text = "";
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

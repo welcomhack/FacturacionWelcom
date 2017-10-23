@@ -110,5 +110,10 @@ namespace FacturacionWELL
             VentLog.Show();
             this.Close();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

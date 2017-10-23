@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -42,27 +45,26 @@
             // 
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // bunifuFlatButton1
+            // textBox1
             // 
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(655, 5);
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconVisible = true;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(610, 444);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(706, 3);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Location = new System.Drawing.Point(648, 3);
+            // 
+            // btnMaxi
+            // 
+            this.btnMaxi.Location = new System.Drawing.Point(677, 3);
             // 
             // ConsultaUsuario
             // 
@@ -72,6 +74,9 @@
             this.Name = "ConsultaUsuario";
             this.Text = "ConsultaUsuario";
             this.Load += new System.EventHandler(this.ConsultaUsuario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
